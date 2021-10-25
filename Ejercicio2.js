@@ -45,9 +45,9 @@ function init() {
 
 //Traslación de los Cubos
 for (i=0; i<3; i++){
-    Cubo[i].translateX(lado/2); //Traslado en X
+    Cubo[i].translateX(lado/2+1); //Traslado en X
     Cubo[i].translateY(lado/2); //Traslado en Y
-    Cubo[i].translateZ(lado/2); //Traslado en Z
+    Cubo[i].translateZ(lado/2+1); //Traslado en Z
 }
 
 // Escalado y Traslación en eje Y
@@ -58,7 +58,7 @@ for (i=0; i<3; i++) if(i==1 || i==2){
     Cubo [i].translateY (unidades); 
 }
 
-//Se aplica la rotación del primer y ultimo cubo en el eje X
+//Se aplica la rotación del primer y ultimo cubo en el eje Y
 angulo= Math.PI/3;
 Cubo[0].rotateY ( angulo );  
 Cubo[2].rotateY ( angulo );  
