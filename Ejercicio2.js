@@ -59,7 +59,7 @@ for (i=0; i<3; i++) if(i==1 || i==2){
 }
 
 //Se aplica la rotación del primer y ultimo cubo en el eje X
-angulo= 1.25;
+angulo= Math.PI/3;
 Cubo[0].rotateY ( angulo );  
 Cubo[2].rotateY ( angulo );  
 
